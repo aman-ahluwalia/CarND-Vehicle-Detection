@@ -111,7 +111,5 @@ Here's an example result showing the heatmap from a test image, the result of `s
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 The hog sampling approach i am using allows to extract the hog features just once and then can be sub-sampled to get all of its overlaying windows. Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance.
-The problem i faced was to tune the parameters plus some image format problem. One more problem which i think could affect the results is the size of the image. As we are using a factor of 64, so it would be fully dividable, hence the cars in the corner which are just overtaking may cause problem. This may be further area to visit as we have to play with hog feature with variable window size.
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+The problem i faced was to tune the parameters plus some image format problem. One more problem which i think could affect the results is the size of the image. As we are using a factor of 64, so it would be fully dividable, hence the cars in the corner which are just overtaking may cause problem. This may be further area to visit as we have to play with hog feature with variable window size. 
 
